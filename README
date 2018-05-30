@@ -1,0 +1,14 @@
+To build this RPM:
+
+	1) create the yuma123 distribution tar file
+	   % cd /path/to/yuma123-git
+	   % autoreconf -i -f
+	   % ./configure
+	   % make dist
+
+	2) Copy/link the resulting tar file
+	   % cp yuma123-2.11.tar.gz /path/to/perl-libyuma2-XS
+
+	3) Build with fedpkg (rhel7 example shown)
+	   % cd /path/to/perl-libyuma2-XS
+	   % fedpkg --release el7 local
