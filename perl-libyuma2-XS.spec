@@ -9,6 +9,8 @@ Patch0:         0001-netconf-perl-remove-requirement-for-perl-v5.018.patch
 
 # Correct for lots of packages, other common choices include eg. Module::Build
 BuildRequires:  perl(ExtUtils::MakeMaker)
+BuildRequires:	yuma123-libyangrpc2-devel
+BuildRequires:	yuma123-libyuma2-devel
 Requires:  perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 
 %{?perl_default_filter}
